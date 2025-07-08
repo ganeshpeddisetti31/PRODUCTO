@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>PRODUCTO</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="logo">
+        <img src="https://nameabovenames2018.myshopify.com/cdn/shop/products/image_aa808689-7c36-408c-a49a-7dd90004db8f.png?v=1631318801" alt="image" />
+        <h1 style="margin-left: auto; color: white;">PRODUCTO</h1>
+    </div>
+
+    <div class="link">
+        <header>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+        </header>
+    </div>
+
+    <div class="form">
+        <h1>Product Form</h1>
+        <form id="product-form">
+            <input type="text" id="product-id" placeholder="Product ID" required />
+            <input type="text" id="product-name" placeholder="Product Name" required />
+            <input type="number" id="product-price" placeholder="Price" required />
+            <input type="number" id="product-qty" placeholder="Quantity" required />
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <div class="table">
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Fan</td>
+                    <td>12000.00</td>
+                    <td>4</td>
+                    <td>
+                        <button onclick="updateRow(this)">Update</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>&copy;2025 PRODUCTO Inc</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
